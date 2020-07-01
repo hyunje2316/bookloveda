@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context reloadable="true">
+	 <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	 
+    <Resource
+    			name="team2:Book"   
+	 			auth="Container"		
+	 			type="javax.sql.DataSource"
+	 			driverClassName="oracle.jdbc.driver.OracleDriver"
+	 			url="jdbc:oracle:thin:@127.0.0.1:1521:xe"
+	 			username="c##yakji"
+	 			password="oracle"	         
+	 			
+	 			maxActive="20"	        
+	 			maxIdle="10"	       
+	 			maxWait="-1"                 
+    />
+  
+  <!--  <Resource 
+	 			name="jdbc:dbcpTestDB"   dbcp name
+	 			auth="Container"		
+	 			type="javax.sql.DataSource"
+	 			driverClassName="oracle.jdbc.driver.OracleDriver"
+	 			url="jdbc:oracle:thin:@127.0.0.1:1521:xe"
+	 			username="kingsmile"      oracle user name
+	 			password="oracle"	         oracle user password
+	 			
+	 			maxActive="20"	        연결 최대 허용 개수
+	 			maxIdle="10"	        항상 연결 상태를 유지하는 개수
+	 			maxWait="-1"                 db연결 최대 시간 설정. -1은 무한정 기다릴때...
+	 		/> -->
+ 
+</Context>
